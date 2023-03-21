@@ -468,7 +468,9 @@ img {
   text-decoration: none;
   display: block;
 }
-
+.text-card {
+  color: var(--primary-color-text);
+}
 .card-shadow-link:hover,
 .card-shadow-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),

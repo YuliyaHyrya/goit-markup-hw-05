@@ -12,6 +12,9 @@
   --color-border-customers: #8e8f99;
   --color-customer-logo: #afb1b8;
   --color-modal: #fcfcfc;
+  --transition-time: 250ms;
+
+  --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 *,
 *::before,
@@ -462,6 +465,8 @@ img {
 .card-set > .card-item {
   margin-top: 48px;
   margin-left: 24px;
+  width: 360px;
+  height: 420px;
 }
 .card-content {
   padding: 32px 0 32px 16px;
@@ -476,11 +481,15 @@ img {
 .text-card {
   color: var(--primary-color-text);
 }
+.overlay {
+}
 .card-shadow-link:hover,
 .card-shadow-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+/* modal windou */
 .backdrop {
   width: 100vw;
   height: 100vh;

@@ -173,7 +173,7 @@ img {
 /* HERO */
 
 .hero {
-  max-width: 1158px;
+  width: 1440px;
   margin: auto;
   background: var(--secondary-color-text);
   padding: 188px 0;
@@ -236,17 +236,20 @@ img {
 .advantages-h3 {
   margin-top: 8px;
 }
-.advantage {
-  display: block;
-}
+
 .element {
   width: 264px;
   height: 112px;
   background: var(--color-background-btn-other);
   border-radius: 4px;
   justify-content: center;
-  align-content: center;
-  padding: 24px 102px;
+  position: relative;
+}
+.advantages-list-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* WORK */

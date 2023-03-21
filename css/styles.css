@@ -11,6 +11,7 @@
   --accent-footer-social-link: #31d0aa;
   --color-border-customers: #8e8f99;
   --color-customer-logo: #afb1b8;
+  --color-modal: #fcfcfc;
 }
 *,
 *::before,
@@ -117,6 +118,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 8px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 .container {
   max-width: 1158px;
@@ -466,4 +473,28 @@ img {
 .card-shadow-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.modal {
+  max-width: 100%;
+  width: 408px;
+  height: 576px;
+  left: 516px;
+  top: 88px;
+  background-color: var(--color-modal);
+  position: fixed;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -62,7 +62,7 @@
           <h1 class="title-hero theme-dark">
             Effective Solutions for Your Business
           </h1>
-          <button class="modal-btn button btn-hero" type="button">
+          <button class="modal-btn button btn-hero" type="button"data-modal-open>
             Order Service
           </button>
         </div>
@@ -629,11 +629,15 @@
     </footer>
 
 
-    <scrip src="./js/model.js"><div class="backdrop">
-  <div class="modal">
-    <h1></h1>
-  </div>
-</div></script>
+    <div class="backdrop is-hidden"data-modal>
+      <div class="modal">
+        <h1></h1> 
+        <button class="modal-btn" type="button">
+           data-modal-open</button>
+      </div>
+    </div> 
+    
+    <scrip src="./js/modal.js"></scrip></script>
 
 
 

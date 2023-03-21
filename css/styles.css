@@ -322,29 +322,31 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
 }
-.customers-logo {
+.our-customers {
   width: 168px;
-  height: 88;
+  height: 88px;
+}
+.link-customers {
+  display: flex;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--color-border-customers);
   border-radius: 4px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
 }
 .customers-icon {
   fill: var(--color-customer-logo);
 }
-.customers-logo:hover,
-.customers-logo:focus {
+.link-customers:hover,
+.link-customers:focus {
   border-color: var(--color-link);
 }
-.link-customers:hover.customers-icon,
-.link-customers:focus.customers-icon {
-  color: var(--color-link);
+.link-customers:hover .customers-icon,
+.link-customers:focus .customers-icon {
+  fill: var(--color-link);
 }
-
 /* FOOTER */
 .footer {
   max-width: 1158px;

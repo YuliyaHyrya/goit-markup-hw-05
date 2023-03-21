@@ -500,3 +500,23 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.modal-close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border-radius: 50%;
+  background: var(--accent-background-btn-other);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.modal-close:hover,
+.modal-close:focus {
+  background: var(--color-link);
+  cursor: pointer;
+}
+.modal-close:hover.clouse-btn,
+.modal-close:focus.clouse-btn {
+  color: var(--theme-dark-color-text);
+}

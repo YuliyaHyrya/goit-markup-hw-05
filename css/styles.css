@@ -97,11 +97,12 @@ img {
   letter-spacing: 0.04em;
   color: var(--theme-dark-color-text);
   background: var(--color-WEB-background-btn);
+  transition: color, background-color var(--transition-time);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   color: var(--theme-dark-color-text);
-  background: var(--color-link);
+  background-color: var(--color-link);
 }
 .section {
   padding-top: 120px;
@@ -190,7 +191,7 @@ img {
   border-radius: 2px;
   background: var(--color-link);
   bottom: 0;
-  transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color var(--transition-time);
 }
 .menu-link:hover::after,
 .menu-link:focus::after {
@@ -202,7 +203,7 @@ img {
   border-radius: 2px;
   background: var(--color-link);
   bottom: 0;
-  transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color var(--transition-time);
 }
 /* HERO */
 
@@ -346,6 +347,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-time);
 }
 
 .social-link-list:hover,
@@ -371,9 +373,11 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition: border-color var(--transition-time);
 }
 .customers-icon {
   fill: var(--color-customer-logo);
+  transition: background-color var(--transition-time);
 }
 .link-customers:hover,
 .link-customers:focus {
@@ -435,6 +439,7 @@ img {
   background-color: var(--primary-color-text);
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-time);
 }
 
 .social-link-list-ftr:hover,
@@ -448,6 +453,7 @@ img {
   padding: 12px 24px 12px 24px;
   border: 1px;
   border-radius: 4px;
+  transition: background-color var(--transition-time);
 }
 
 .portfolio-btn:hover,
@@ -466,6 +472,7 @@ img {
 .btn-all {
   color: var(--theme-dark-color-text);
   background: var(--color-link);
+  transition: box-shadow, background-color var(--transition-time);
 }
 .btn-all:hover,
 .btn-all:focus {
@@ -475,6 +482,7 @@ img {
 }
 .btn-other {
   border: 1px solid var(--accent-background-btn-other);
+  transition: box-shadow var(--transition-time);
 }
 .btn-other:hover,
 .btn-other:focus {
@@ -507,6 +515,7 @@ img {
 .card-shadow-link {
   text-decoration: none;
   display: block;
+  transition: box-shadow var(--transition-time);
 }
 .text-card {
   color: var(--primary-color-text);
@@ -531,7 +540,7 @@ img {
   padding-bottom: 164px;
   padding-left: 32px;
   transform: translateY(101%);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform var(--transition-time);
 }
 .card-shadow-link:hover .overlay,
 .card-shadow-link:focus .overlay {

@@ -592,7 +592,7 @@ img {
   fill: var(--secondary-color-text);
   transition: fill var(--transition-time);
 }
-.modal-close:hover .clouse-btn,
-.modal-close:focus .clouse-btn {
+.modal-close:hover .close-btn,
+.modal-close:focus .close-btn {
   fill: var(--theme-dark-color-text);
 }
